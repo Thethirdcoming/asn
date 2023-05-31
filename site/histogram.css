@@ -1,40 +1,50 @@
 body {
-  margin: 0;
-  padding: 2rem;
-  background-color: hsl(250, 24%, 9%);
-  color: hsl(0, 0%, 100%);
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+.container {
+    display: flex;
+    justify-content: space-between;
 }
 
-h1 {
-  font-size: 48px;
-  margin: 1rem 0;
+.left-box,
+.right-box {
+    width: 45%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.logo {
-  width: 8rem;
-  height: 8rem;
-  margin-bottom: 2rem;
+.right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-p {
-  line-height: 1.6;
+.histogram-box,
+.new-grade-box {
+    height: 45%;
 }
 
-a {
-  color: hsl(270, 70%, 65%);
-  text-decoration: none;
+.grades-inputs,
+.grades-bars {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
-a:hover {
-  text-decoration: underline;
+.grades-inputs label,
+.grades-bars label {
+    margin-bottom: 10px;
+}
+
+.grades-inputs input,
+.new-grade-box input {
+    margin-bottom: 20px;
+}
+
+.bar {
+    height: 20px;
+    background-color: #A8DADC;
+    width: 0%; /* This should be adjusted dynamically */
 }
